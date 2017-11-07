@@ -41,7 +41,7 @@
 <ul class="nav">
 
 
-                <li class="dropdown">
+                <li class="dropdown pull-right">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user-plus"></i>  <i class="fa fa-caret-down"></i>
                     </a>
@@ -74,10 +74,10 @@
                     </li>
 
                     <li>
-                        <a class="active-menu"  href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
+                        <a href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="ui.html"><i class="fa fa-venus "></i>Customers </a>
+                        <a class="active-menu" href="customer.html"><i class="fa fa-venus "></i>Customers </a>
 
                     </li>
 
@@ -131,15 +131,81 @@
                         <h1 class="page-head-line">Customer</h1>
                     </div>
                 </div>
-                <div class="form-group">
-                  <label for="cu_id">Customer ID</label>
-                  <input type="text" class="form-control" id="cu_id" placeholder="Customer ID" />
-                </div>
-                <div class="form-group">
-                  <label for="cu_ph">Phone</label>
-                  <input type="text" class="form-control" id="cu_ph" placeholder="Phone" />
-                </div>
-                  <button type="search" class="btn btn-primary">Search</button>
+    <form class="form-inline">
+    <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <input type="text" class="form-control" id="inlineFormInputName2" placeholder="Customer Name">
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Phone</label>
+
+    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Phone">
+
+    <button type="button" class="btn btn-default" id="submit">Search</button>
+  </form>
+<hr />
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Customers
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-hover" id='customerlist'>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Phone</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>8978700050</td>
+                        <td>Sameer</td>
+                        <td>Mathad</td>
+                        <td>@howzzaat</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
             </div>
             <!-- /. PAGE INNER  -->
         </div>

@@ -1,7 +1,7 @@
 
 /*=============================================================
     Authour URL: www.designbootstrap.com
-    
+
     http://www.designbootstrap.com/
 
     License: MIT
@@ -11,13 +11,13 @@
     100% Free To use For Personal And Commercial Use.
 
     IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-   
+
 ========================================================  */
 
 
 
 /*==============================================
-    GENERAL  STYLES    
+    GENERAL  STYLES
  =============================================*/
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -35,6 +35,11 @@ body {
 
 #page-wrapper {
     padding: 15px 15px;
+    min-height: 800px;
+    background: #fff;
+}
+#grid-wrapper {
+    padding: 1px 10px;
     min-height: 800px;
     background: #fff;
 }
@@ -58,9 +63,8 @@ body {
 }
 
 .btn {
-    border-radius:0px!important;
-    -moz-border-radius:0px!important;
-    -webkit-border-radius:0px!important;
+    border-radius:5px!important;
+
 }
 
 .progress {
@@ -72,13 +76,13 @@ body {
 
 
 /*==============================================
-    MENU STYLES    
+    MENU STYLES
  =============================================*/
 
 
 .navbar-cls-top .navbar-brand {
     color: #fff;
-    background: #DD1533;
+    background: #3db0f3;
     width: 180px;
     text-align: center;
     height: 75px;
@@ -108,7 +112,7 @@ body {
         border: 5px solid #DD1533;
     }
 
-   
+
 .active-menu {
     background-color: #fff!important;
     border-left: 5px solid #DD1533;
@@ -209,7 +213,7 @@ border-bottom: 1px solid #D2D2D2;
 
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #FFF;
-        
+
     }
 
 .nav > li > a > i {
@@ -217,7 +221,7 @@ border-bottom: 1px solid #D2D2D2;
 }
 
 /*==============================================
-    NOTIFICATION  STYLES    
+    NOTIFICATION  STYLES
  =============================================*/
 .notifications-wrapper {
 margin-left:3px;
@@ -263,14 +267,14 @@ background-color: #FFF!important;
 
 }
 .notifications-wrapper .dropdown-menu {
-    margin:0px; 
+    margin:0px;
      border-radius:0px!important;
     -moz-border-radius:0px!important;
     -webkit-border-radius:0px!important;
 }
 
 /*==============================================
-    FOOTER  STYLES    
+    FOOTER  STYLES
  =============================================*/
 footer {
     background-color:#262626;
@@ -331,12 +335,15 @@ footer {
 }
 
 /*==============================================
-    MEDIA QUERIES     
+    MEDIA QUERIES
   =============================================*/
 
 @media (min-width:768px) {
     .page-wrapper-cls {
         margin: 0 0 0 180px;
+    }
+    .grid-wrapper-cls {
+        margin: 0 0 0 50px;
     }
 
 
