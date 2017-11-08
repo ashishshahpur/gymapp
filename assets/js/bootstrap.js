@@ -1563,14 +1563,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
- $(".date-picker").datepicker();
-
- $(".date-picker").on("change", function () {
-     var id = $(this).attr("id");
-     var val = $("label[for='" + id + "']").text();
-     $("#msg").text(val + " changed");
- });
-
+ 
 +function ($) {
   'use strict';
 

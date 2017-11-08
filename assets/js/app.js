@@ -3,24 +3,20 @@ var options = [
         set1 = ['2','Option','Second Option','Third Option']
     ];
 
-function makeUL(array[i]) {
+function makeUL(array) {
     // Create the list element:
-    for(var j=0; j<array.length; j++){
-      var list = document.createElement('tr');
+    var list = document.createElement('tr');
 
-
-
-    for(var k = 0; k < array[j].length; k++) {
+    for(var i = 0; i < array.length; i++) {
         // Create the list item:
         var item = document.createElement('td');
 
         // Set its contents:
-        item.appendChild(document.createTextNode(array[k]));
+        item.appendChild(document.createTextNode(array[i]));
 
         // Add it to the list:
         list.appendChild(item);
     }
-  }
 
     // Finally, return the constructed list:
     return list;
