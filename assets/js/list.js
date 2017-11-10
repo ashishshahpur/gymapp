@@ -2,7 +2,7 @@ var listdb = ['Monthly','Quarterly','Half-Yearly','Annual']
 var listdb1 = ['yes','no']
 
 function getList(array,elementid){
-var select = document.getElementById(elementid);
+var select = document.getElementById('testlist');
 for (i = 0; i < array.length; i++) {
   var option = document.createElement('option');
 
