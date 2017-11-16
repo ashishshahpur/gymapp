@@ -9,10 +9,8 @@ var options = [
 function makeTable(array){
 var table = document.createElement('table');
 var tableBody = document.createElement('tbody');
-console.log(array)
-for (i = 0; i < array.length; i++) {
-    var tr = document.createElement('tr');
-    var option = array[i];
+console.log(array) for (i = 0; i < array.length; i++) { var tr = document.createElement('tr');
+var option = array[i];
     for (j = 0; j < option.length; j++) {
         var td = document.createElement('td')
         td.appendChild(document.createTextNode(option[j]));
@@ -20,7 +18,7 @@ for (i = 0; i < array.length; i++) {
     }
     tableBody.appendChild(tr);
   }
-return tableBody;
+   return tableBody;
 console.log(tableBody);
 }
 
