@@ -23,4 +23,13 @@ function makeUL(array) {
 }
 
 // Add the contents of options[0] to #foo:
-document.getElementById('cuslist').appendChild(makeUL(options[0]));
+//document.getElementById('cuslist').appendChild(makeUL(options[0]));
+
+
+document.querySelector('addcustomer').onClick = showAddCustomer;
+
+function showAddCustomer() {
+  document.getElementById('tablepanel').setAttribute('hidden', true);
+  document.getElementById('customerform').setAttribute('hidden', false);
+
+};

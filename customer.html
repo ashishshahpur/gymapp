@@ -74,49 +74,23 @@
                     </li>
 
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
+                        <a  href="index.html"><i class="fa fa-heartbeat"></i>Dashboard</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="customer.html"><i class="fa fa-venus "></i>Customers </a>
-
+                        <a class="active-menu" href="customer.html"><i class="fa fa-users"></i>Customers</a>
                     </li>
-
                     <li>
-                        <a href="table.html"><i class="fa fa-bolt "></i>Data Tables </a>
+                        <a href="attendance.html"><i class="fa fa-calendar-o "></i>Attendance</a>
 
-                    </li>
-
-
-                     <li>
-                        <a href="forms.html"><i class="fa fa-code "></i>Forms</a>
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-sitemap "></i>Multilevel Link <span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#"><i class="fa fa-cogs "></i>Second  Link</a>
-                            </li>
-                             <li>
-                                <a href="#"><i class="fa fa-bullhorn "></i>Second Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third  Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Link</a>
-                                    </li>
+                        <a href="payments.html"><i class="fa fa-rupee "></i> Payments</a>
 
-                                </ul>
-
-                            </li>
-                        </ul>
                     </li>
                     <li>
-                        <a href="blank.html"><i class="fa fa-dashcube "></i>Blank Page</a>
+                        <a href="settings.html"><i class="fa fa-wrench "></i>Settings</a>
+
                     </li>
 
                 </ul>
@@ -130,23 +104,31 @@
                     <div class="col-md-12">
                         <h1 class="page-head-line">Customer</h1>
                     </div>
+
+                    <form class="navbar-form" role="search">
+        <div class="input-group col-md-8  ">
+            <input type="text " class="form-control" placeholder="Search" name="srch" id="srch">
+            <div class="input-group-btn ">
+                <button class="btn btn-danger move-left" type="submit"><i class="glyphicon glyphicon-search "></i>
+                </button>
+            </div>
+        </div>
+        <button id="addcustomer" class="btn btn-primary">Add Customer</button>
+    </form>
                 </div>
-    <form class="form-inline">
-    <label class="sr-only" for="inlineFormInputName2">Name</label>
-    <input type="text" class="form-control" id="inlineFormInputName2" placeholder="Customer Name">
-    <label class="sr-only" for="inlineFormInputGroupUsername2">Phone</label>
 
-    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Phone">
 
-    <button type="button" class="btn btn-default" id="submit">Search</button>
-  </form>
+
+
 <hr />
-<div class="panel panel-default">
+
+
+<div id ="tablepanel" class="panel panel-default " >
     <div class="panel-heading">
         Users
     </div>
     <div class="panel-body">
-        <div class="table-responsive">
+        <div class="table-responsive" >
             <table class="table table-hover" id='table'>
                 <thead>
                     <tr>
@@ -164,6 +146,15 @@
     </div>
 </div>
 
+<form id="customerform" class="col-md-4" >
+  <h3>Add Customer</h3>
+  <div class="form-group">
+    <input type="text" class="form-control" id="" placeholder="Phone No.">
+    <span class="" style="color:red" id="addcustomererror"></span>
+  </div>
+  <div class="form-group"> <select class="form-control" id="usertype"> </select> </div>
+  <button class="btn btn-default" type="submit" name="button">Submit</button>
+</form>
 
             </div>
             <!-- /. PAGE INNER  -->
@@ -184,9 +175,7 @@
     <!-- METISMENU SCRIPTS -->
     <script src="assets/js/jquery.metisMenu.js"></script>
     <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/testapp.js"></script>
+    <script src="assets/js/app1.js"></script>
     <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
 //]]></script>
