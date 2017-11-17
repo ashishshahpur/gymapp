@@ -14,24 +14,32 @@
   </head>
   <body>
     <div class="container">
-  <h2>Inline form: control states</h2>
-  <form>
+      <h2>Login</h2>
+  <form >
 
-    <div class="form-group" id="textbox">
-      <input class="form-control" id="username" type="text" placeholder="Username">
-      <span class="hint--right" aria-label="Hello"></span>
-    </div>
-    <div class="form-group" id="textbox">
+
+
+    <div class="col-6 form-group" id="textbox">
       <input class="form-control" id="email" type="text" placeholder="Email">
-      <span class="" aria-label="test"></span>
+      <span class="" style="color:red"id='emailerror'></span>
     </div>
-
-
-
-
+    <div class="col-6 form-group" id="textbox1">
+      <input class="form-control" id="username" type="password" placeholder="Password">
+      <span class="" id='passworderror'></span>
+    </div>
+    <button type="button" class="col-6 btn btn-default">Login
+    </button>
 
   </form>
 </div>
+
+
+
+
+
+
+
+
 <script src="assets/js/error.js"></script>
 
   </body>

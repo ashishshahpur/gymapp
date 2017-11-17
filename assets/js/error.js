@@ -1,28 +1,27 @@
 
-document.querySelector('#username').onchange = validateInput;
+//document.querySelector('#username').onchange = validateInput;
 document.querySelector('#email').onchange = validateInput;
 
 function validateInput(){
   var email = document.getElementById('email')
   var spa = email.parentElement.children[1]
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+  if (email.value == "")
       {
-
-        //document.getElementById('testlabel').innerText = 'valid email';
-        //email.parentElement.children[1].className = "hint--right"
-        email.parentElement.className = "form-group has-success has-feedback"
-
-
+        email.parentElement.className = "form-group"
+        email.parentElement.children[1].innerText= "Enter an Email Address!"
+      }
+  else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+      {
+        email.parentElement.children[1].innerText= ""
+        email.parentElement.className = "form-group has-success";
       }
 
-else    {
-  
-        email.parentElement.children[1].className = "hint--right"
-        console.log(email.parentElement.children[1]['aria-label'])
-        email.parentElement.className = "form-group has-error has-feedback"
-        console.log(email.parentElement.children[1]);
-  }
-  return false;
-}
+   else {
+        email.parentElement.children[1].innerText= "Invalid Email"
+        //email.parentElement.children[1].style.color = "red";
+        email.parentElement.className = "form-group has-error"
+      }
 
-//.right-addon .glyphicon { right: 0px;}
+  return false;
+
+}
